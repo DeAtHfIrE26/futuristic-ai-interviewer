@@ -1,0 +1,37 @@
+[2025-04-22 10:24:00] Starting application with OpenCV version: 4.8.0
+[2025-04-22 10:24:00] Checking OpenCV face capabilities...
+[2025-04-22 10:24:00] cv2.face exists. Available methods: ['__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__']
+[2025-04-22 10:24:06] Loading tokenizer from gpt2
+[2025-04-22 10:24:11] Error loading conversation model: Can't load tokenizer for 'gpt2'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'gpt2' is the correct path to a directory containing all relevant files for a GPT2Tokenizer tokenizer.
+[2025-04-22 10:24:13] Loading classification model from distilbert-base-uncased
+[2025-04-22 10:24:15] Application closed by user.
+[2025-04-22 10:24:29] Error loading classification model: Could not load model distilbert-base-uncased-finetuned-sst-2-english with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForSequenceClassification'>, <class 'transformers.models.auto.modeling_tf_auto.TFAutoModelForSequenceClassification'>). See the original errors:
+
+while loading with AutoModelForSequenceClassification, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\pipelines\base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\models\auto\auto_factory.py", line 573, in from_pretrained
+    return model_class.from_pretrained(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\modeling_utils.py", line 272, in _wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\modeling_utils.py", line 4317, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\modeling_utils.py", line 1110, in _get_resolved_checkpoint_files
+    raise EnvironmentError(
+OSError: distilbert-base-uncased-finetuned-sst-2-english does not appear to have a file named pytorch_model.bin but there is a file for TensorFlow weights. Use `from_tf=True` to load this model from those weights.
+
+while loading with TFAutoModelForSequenceClassification, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\pipelines\base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\models\auto\auto_factory.py", line 573, in from_pretrained
+    return model_class.from_pretrained(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\modeling_tf_utils.py", line 2873, in from_pretrained
+    raise EnvironmentError(
+OSError: distilbert-base-uncased-finetuned-sst-2-english does not appear to have a file named tf_model.h5 but there is a file for PyTorch weights. Use `from_pt=True` to load this model from those weights.
+
+
+
+[2025-04-22 10:25:06] Lip sync stub loaded.
+[2025-04-22 10:25:06] YOLO loaded for phone detection.

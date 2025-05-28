@@ -1,0 +1,37 @@
+[2025-04-22 10:20:26] Starting application with OpenCV version: 4.8.0
+[2025-04-22 10:20:26] Checking OpenCV face capabilities...
+[2025-04-22 10:20:26] cv2.face exists. Available methods: ['__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__']
+[2025-04-22 10:20:34] Loading tokenizer from microsoft/DialoGPT-small
+[2025-04-22 10:20:35] Error loading conversation model: Unrecognized model in microsoft/DialoGPT-small. Should have a `model_type` key in its config.json, or contain one of the following strings in its name: albert, align, altclip, aria, aria_text, audio-spectrogram-transformer, autoformer, aya_vision, bamba, bark, bart, beit, bert, bert-generation, big_bird, bigbird_pegasus, biogpt, bit, blenderbot, blenderbot-small, blip, blip-2, bloom, bridgetower, bros, camembert, canine, chameleon, chinese_clip, chinese_clip_vision_model, clap, clip, clip_text_model, clip_vision_model, clipseg, clvp, code_llama, codegen, cohere, cohere2, colpali, conditional_detr, convbert, convnext, convnextv2, cpmant, ctrl, cvt, dab-detr, dac, data2vec-audio, data2vec-text, data2vec-vision, dbrx, deberta, deberta-v2, decision_transformer, deformable_detr, deit, depth_anything, depth_pro, deta, detr, diffllama, dinat, dinov2, dinov2_with_registers, distilbert, donut-swin, dpr, dpt, efficientformer, efficientnet, electra, emu3, encodec, encoder-decoder, ernie, ernie_m, esm, falcon, falcon_mamba, fastspeech2_conformer, flaubert, flava, fnet, focalnet, fsmt, funnel, fuyu, gemma, gemma2, gemma3, gemma3_text, git, glm, glpn, got_ocr2, gpt-sw3, gpt2, gpt_bigcode, gpt_neo, gpt_neox, gpt_neox_japanese, gptj, gptsan-japanese, granite, granitemoe, granitemoeshared, granitevision, graphormer, grounding-dino, groupvit, helium, hiera, hubert, ibert, idefics, idefics2, idefics3, idefics3_vision, ijepa, imagegpt, informer, instructblip, instructblipvideo, jamba, jetmoe, jukebox, kosmos-2, layoutlm, layoutlmv2, layoutlmv3, led, levit, lilt, llama, llava, llava_next, llava_next_video, llava_onevision, longformer, longt5, luke, lxmert, m2m_100, mamba, mamba2, marian, markuplm, mask2former, maskformer, maskformer-swin, mbart, mctct, mega, megatron-bert, mgp-str, mimi, mistral, mistral3, mixtral, mllama, mobilebert, mobilenet_v1, mobilenet_v2, mobilevit, mobilevitv2, modernbert, moonshine, moshi, mpnet, mpt, mra, mt5, musicgen, musicgen_melody, mvp, nat, nemotron, nezha, nllb-moe, nougat, nystromformer, olmo, olmo2, olmoe, omdet-turbo, oneformer, open-llama, openai-gpt, opt, owlv2, owlvit, paligemma, patchtsmixer, patchtst, pegasus, pegasus_x, perceiver, persimmon, phi, phi3, phimoe, pix2struct, pixtral, plbart, poolformer, pop2piano, prompt_depth_anything, prophetnet, pvt, pvt_v2, qdqbert, qwen2, qwen2_5_vl, qwen2_audio, qwen2_audio_encoder, qwen2_moe, qwen2_vl, rag, realm, recurrent_gemma, reformer, regnet, rembert, resnet, retribert, roberta, roberta-prelayernorm, roc_bert, roformer, rt_detr, rt_detr_resnet, rt_detr_v2, rwkv, sam, seamless_m4t, seamless_m4t_v2, segformer, seggpt, sew, sew-d, shieldgemma2, siglip, siglip2, siglip_vision_model, smolvlm, smolvlm_vision, speech-encoder-decoder, speech_to_text, speech_to_text_2, speecht5, splinter, squeezebert, stablelm, starcoder2, superglue, superpoint, swiftformer, swin, swin2sr, swinv2, switch_transformers, t5, table-transformer, tapas, textnet, time_series_transformer, timesformer, timm_backbone, timm_wrapper, trajectory_transformer, transfo-xl, trocr, tvlt, tvp, udop, umt5, unispeech, unispeech-sat, univnet, upernet, van, video_llava, videomae, vilt, vipllava, vision-encoder-decoder, vision-text-dual-encoder, visual_bert, vit, vit_hybrid, vit_mae, vit_msn, vitdet, vitmatte, vitpose, vitpose_backbone, vits, vivit, wav2vec2, wav2vec2-bert, wav2vec2-conformer, wavlm, whisper, xclip, xglm, xlm, xlm-prophetnet, xlm-roberta, xlm-roberta-xl, xlnet, xmod, yolos, yoso, zamba, zamba2, zoedepth
+[2025-04-22 10:20:50] Loading zero-shot classifier from cross-encoder/nli-distilroberta-base
+[2025-04-22 10:20:54] Application closed by user.
+[2025-04-22 10:21:11] Error loading zero-shot classifier: Could not load model cross-encoder/nli-distilroberta-base with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForSequenceClassification'>, <class 'transformers.models.auto.modeling_tf_auto.TFAutoModelForSequenceClassification'>). See the original errors:
+
+while loading with AutoModelForSequenceClassification, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\pipelines\base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\models\auto\auto_factory.py", line 573, in from_pretrained
+    return model_class.from_pretrained(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\modeling_utils.py", line 272, in _wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\modeling_utils.py", line 4317, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\modeling_utils.py", line 1116, in _get_resolved_checkpoint_files
+    raise EnvironmentError(
+OSError: cross-encoder/nli-distilroberta-base does not appear to have a file named pytorch_model.bin but there is a file for Flax weights. Use `from_flax=True` to load this model from those weights.
+
+while loading with TFAutoModelForSequenceClassification, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\pipelines\base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\models\auto\auto_factory.py", line 573, in from_pretrained
+    return model_class.from_pretrained(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\modeling_tf_utils.py", line 2873, in from_pretrained
+    raise EnvironmentError(
+OSError: cross-encoder/nli-distilroberta-base does not appear to have a file named tf_model.h5 but there is a file for PyTorch weights. Use `from_pt=True` to load this model from those weights.
+
+
+
+[2025-04-22 10:22:44] Lip sync stub loaded.
+[2025-04-22 10:22:53] YOLO loaded for phone detection.

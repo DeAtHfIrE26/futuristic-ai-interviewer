@@ -1,0 +1,23 @@
+[2025-04-22 10:27:34] Starting application with OpenCV version: 4.8.0
+[2025-04-22 10:27:34] Checking OpenCV face capabilities...
+[2025-04-22 10:27:34] cv2.face exists. Available methods: ['__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__']
+[2025-04-22 10:27:35] Skipping local model loading - using Mistral API exclusively
+[2025-04-22 10:27:35] Lip sync stub loaded.
+[2025-04-22 10:27:35] YOLO loaded for phone detection.
+[2025-04-22 10:27:53] Simple face recognizer trained with 30 samples
+[2025-04-22 10:28:19] Text classification skipped - using Mistral API for interview questions
+[2025-04-22 10:28:20] Mistral query error attempt 1: Illegal header value b'Bearer lGNvKIR4adIAyLqmB0icaPHyFWxEx17L '
+[2025-04-22 10:28:21] Mistral query error attempt 2: Illegal header value b'Bearer lGNvKIR4adIAyLqmB0icaPHyFWxEx17L '
+[2025-04-22 10:28:22] Mistral query error attempt 3: Illegal header value b'Bearer lGNvKIR4adIAyLqmB0icaPHyFWxEx17L '
+[2025-04-22 10:28:48] Mistral query error attempt 1: Illegal header value b'Bearer lGNvKIR4adIAyLqmB0icaPHyFWxEx17L '
+[2025-04-22 10:28:49] Mistral query error attempt 2: Illegal header value b'Bearer lGNvKIR4adIAyLqmB0icaPHyFWxEx17L '
+[2025-04-22 10:28:50] Mistral query error attempt 3: Illegal header value b'Bearer lGNvKIR4adIAyLqmB0icaPHyFWxEx17L '
+[2025-04-22 10:29:16] Mistral query error attempt 1: Illegal header value b'Bearer lGNvKIR4adIAyLqmB0icaPHyFWxEx17L '
+[2025-04-22 10:29:17] Mistral query error attempt 2: Illegal header value b'Bearer lGNvKIR4adIAyLqmB0icaPHyFWxEx17L '
+[2025-04-22 10:29:18] Mistral query error attempt 3: Illegal header value b'Bearer lGNvKIR4adIAyLqmB0icaPHyFWxEx17L '
+[2025-04-22 10:29:44] Mistral query error attempt 1: Illegal header value b'Bearer lGNvKIR4adIAyLqmB0icaPHyFWxEx17L '
+[2025-04-22 10:29:45] Mistral query error attempt 2: Illegal header value b'Bearer lGNvKIR4adIAyLqmB0icaPHyFWxEx17L '
+[2025-04-22 10:29:46] Mistral query error attempt 3: Illegal header value b'Bearer lGNvKIR4adIAyLqmB0icaPHyFWxEx17L '
+[2025-04-22 10:30:13] Mistral query error attempt 1: Illegal header value b'Bearer lGNvKIR4adIAyLqmB0icaPHyFWxEx17L '
+[2025-04-22 10:30:14] Mistral query error attempt 2: Illegal header value b'Bearer lGNvKIR4adIAyLqmB0icaPHyFWxEx17L '
+[2025-04-22 10:30:15] Mistral query error attempt 3: Illegal header value b'Bearer lGNvKIR4adIAyLqmB0icaPHyFWxEx17L '

@@ -1,0 +1,155 @@
+[2025-04-22 14:20:03] Starting application with OpenCV version: 4.8.0
+[2025-04-22 14:20:03] Checking OpenCV face capabilities...
+[2025-04-22 14:20:03] cv2.face exists. Available methods: ['__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__']
+[2025-04-22 14:20:05] Attempting to load tokenizer from facebook/blenderbot-400M-distill
+[2025-04-22 14:20:14] Could not load original tokenizer: Can't load tokenizer for 'facebook/blenderbot-400M-distill'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'facebook/blenderbot-400M-distill' is the correct path to a directory containing all relevant files for a BlenderbotTokenizerFast tokenizer., using fallback option
+[2025-04-22 14:20:14] Using fallback model: gpt2
+[2025-04-22 14:20:19] Model loading error: Can't load tokenizer for 'gpt2'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'gpt2' is the correct path to a directory containing all relevant files for a GPT2Tokenizer tokenizer.
+[2025-04-22 14:20:19] Loading zero-shot classifier from facebook/bart-large-mnli
+[2025-04-22 14:20:39] Zero-shot classifier loading error: Could not load model facebook/bart-large-mnli with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForSequenceClassification'>, <class 'transformers.models.auto.modeling_tf_auto.TFAutoModelForSequenceClassification'>). See the original errors:
+
+while loading with AutoModelForSequenceClassification, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\pipelines\base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\models\auto\auto_factory.py", line 573, in from_pretrained
+    return model_class.from_pretrained(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\modeling_utils.py", line 272, in _wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\modeling_utils.py", line 4317, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\modeling_utils.py", line 1116, in _get_resolved_checkpoint_files
+    raise EnvironmentError(
+OSError: facebook/bart-large-mnli does not appear to have a file named pytorch_model.bin but there is a file for Flax weights. Use `from_flax=True` to load this model from those weights.
+
+while loading with TFAutoModelForSequenceClassification, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\pipelines\base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\models\auto\auto_factory.py", line 573, in from_pretrained
+    return model_class.from_pretrained(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\modeling_tf_utils.py", line 2873, in from_pretrained
+    raise EnvironmentError(
+OSError: facebook/bart-large-mnli does not appear to have a file named tf_model.h5 but there is a file for PyTorch weights. Use `from_pt=True` to load this model from those weights.
+
+
+, using fallback
+[2025-04-22 14:20:48] Fallback classifier also failed: Could not load model distilbert-base-uncased-finetuned-sst-2-english with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForSequenceClassification'>, <class 'transformers.models.auto.modeling_tf_auto.TFAutoModelForSequenceClassification'>). See the original errors:
+
+while loading with AutoModelForSequenceClassification, an error is thrown:
+Traceback (most recent call last):
+  File "D:\ACEDAMIC\Capstone\Final_Interview_Coach\new_sapota.py", line 2790, in finish_loading
+    zero_shot_classifier = pipeline("zero-shot-classification", model=ZS_MODEL_NAME)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\pipelines\__init__.py", line 942, in pipeline
+    framework, model = infer_framework_load_model(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\pipelines\base.py", line 304, in infer_framework_load_model
+    raise ValueError(
+ValueError: Could not load model facebook/bart-large-mnli with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForSequenceClassification'>, <class 'transformers.models.auto.modeling_tf_auto.TFAutoModelForSequenceClassification'>). See the original errors:
+
+while loading with AutoModelForSequenceClassification, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\pipelines\base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\models\auto\auto_factory.py", line 573, in from_pretrained
+    return model_class.from_pretrained(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\modeling_utils.py", line 272, in _wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\modeling_utils.py", line 4317, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\modeling_utils.py", line 1116, in _get_resolved_checkpoint_files
+    raise EnvironmentError(
+OSError: facebook/bart-large-mnli does not appear to have a file named pytorch_model.bin but there is a file for Flax weights. Use `from_flax=True` to load this model from those weights.
+
+while loading with TFAutoModelForSequenceClassification, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\pipelines\base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\models\auto\auto_factory.py", line 573, in from_pretrained
+    return model_class.from_pretrained(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\modeling_tf_utils.py", line 2873, in from_pretrained
+    raise EnvironmentError(
+OSError: facebook/bart-large-mnli does not appear to have a file named tf_model.h5 but there is a file for PyTorch weights. Use `from_pt=True` to load this model from those weights.
+
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\pipelines\base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\models\auto\auto_factory.py", line 573, in from_pretrained
+    return model_class.from_pretrained(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\modeling_utils.py", line 272, in _wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\modeling_utils.py", line 4317, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\modeling_utils.py", line 1110, in _get_resolved_checkpoint_files
+    raise EnvironmentError(
+OSError: distilbert-base-uncased-finetuned-sst-2-english does not appear to have a file named pytorch_model.bin but there is a file for TensorFlow weights. Use `from_tf=True` to load this model from those weights.
+
+while loading with TFAutoModelForSequenceClassification, an error is thrown:
+Traceback (most recent call last):
+  File "D:\ACEDAMIC\Capstone\Final_Interview_Coach\new_sapota.py", line 2790, in finish_loading
+    zero_shot_classifier = pipeline("zero-shot-classification", model=ZS_MODEL_NAME)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\pipelines\__init__.py", line 942, in pipeline
+    framework, model = infer_framework_load_model(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\pipelines\base.py", line 304, in infer_framework_load_model
+    raise ValueError(
+ValueError: Could not load model facebook/bart-large-mnli with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForSequenceClassification'>, <class 'transformers.models.auto.modeling_tf_auto.TFAutoModelForSequenceClassification'>). See the original errors:
+
+while loading with AutoModelForSequenceClassification, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\pipelines\base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\models\auto\auto_factory.py", line 573, in from_pretrained
+    return model_class.from_pretrained(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\modeling_utils.py", line 272, in _wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\modeling_utils.py", line 4317, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\modeling_utils.py", line 1116, in _get_resolved_checkpoint_files
+    raise EnvironmentError(
+OSError: facebook/bart-large-mnli does not appear to have a file named pytorch_model.bin but there is a file for Flax weights. Use `from_flax=True` to load this model from those weights.
+
+while loading with TFAutoModelForSequenceClassification, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\pipelines\base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\models\auto\auto_factory.py", line 573, in from_pretrained
+    return model_class.from_pretrained(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\modeling_tf_utils.py", line 2873, in from_pretrained
+    raise EnvironmentError(
+OSError: facebook/bart-large-mnli does not appear to have a file named tf_model.h5 but there is a file for PyTorch weights. Use `from_pt=True` to load this model from those weights.
+
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\pipelines\base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\models\auto\auto_factory.py", line 573, in from_pretrained
+    return model_class.from_pretrained(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\modeling_tf_utils.py", line 2873, in from_pretrained
+    raise EnvironmentError(
+OSError: distilbert-base-uncased-finetuned-sst-2-english does not appear to have a file named tf_model.h5 but there is a file for PyTorch weights. Use `from_pt=True` to load this model from those weights.
+
+
+
+[2025-04-22 14:20:48] Lip sync stub loaded.
+[2025-04-22 14:20:48] YOLO loaded for phone detection.
+[2025-04-22 14:21:04] Simple face recognizer trained with 30 samples
+[2025-04-22 14:21:25] Adjusted ambient noise threshold to 1500
+[2025-04-22 14:22:05] Lip sync check: mouth ratio=0.0471, score=1.00
+[2025-04-22 14:22:19] Lip sync check: mouth ratio=0.0039, score=0.39
+[2025-04-22 14:22:23] Insufficient mouth movement warning
+[2025-04-22 14:22:58] Interview finishing... summary/scoring
+[2025-04-22 14:24:11] Error generating PDF report: name 'create_warning_analysis' is not defined
+Traceback (most recent call last):
+  File "D:\ACEDAMIC\Capstone\Final_Interview_Coach\new_sapota.py", line 1739, in generate_pdf_report
+    create_warning_analysis(pdf, warning_count, breakdown)
+NameError: name 'create_warning_analysis' is not defined
+
+[2025-04-22 14:24:11] Interview fully finished.

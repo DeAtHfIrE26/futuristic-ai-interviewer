@@ -1,0 +1,5 @@
+[2025-04-22 10:36:21] Starting application with OpenCV version: 4.8.0
+[2025-04-22 10:36:21] Checking OpenCV face capabilities...
+[2025-04-22 10:36:21] cv2.face exists. Available methods: ['__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__']
+[2025-04-22 10:36:28] Model load error: Can't load tokenizer for 'facebook/blenderbot-400M-distill'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'facebook/blenderbot-400M-distill' is the correct path to a directory containing all relevant files for a BlenderbotTokenizerFast tokenizer.
+[2025-04-22 10:37:06] Application closed by user.
