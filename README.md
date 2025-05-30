@@ -531,12 +531,4 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 **Made with ❤️ by [ Kashyap Patel ] | © 2025 AI Interview Coach**
 
 
-```
 
-Citations:
-[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/54585129/964862d0-c275-4d2a-b205-ba068c1a6ce5/Kash.py
-[2] https://pplx-res.cloudinary.com/image/private/user_uploads/54585129/ded4602c-8803-4559-a0d5-4d6f2adefa3c/Screenshot-2025-05-28-232527.jpg
-[3] https://pplx-res.cloudinary.com/image/private/user_uploads/54585129/d53f0619-efea-49ce-a2d3-1285b4af76c7/Screenshot-2025-05-28-232536.jpg
-
----
-Answer from Perplexity: pplx.ai/share
