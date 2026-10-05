@@ -1,3 +1,9 @@
+> **This project has moved.** Development continues in
+> [Next-Generation-Virtual-Interview-Training-System](https://github.com/DeAtHfIrE26/Next-Generation-Virtual-Interview-Training-System),
+> which imports this repository's full history under `legacy/futuristic/`. This repository is kept for reference only.
+> Accuracy figures and benchmark tables below were never measured and must not be relied on. Measured results, when
+> available, are published in that repository's `docs/EVAL_REPORT.md`.
+
 
 
 # 🚀 AI Interview Coach - Futuristic Interview Platform
